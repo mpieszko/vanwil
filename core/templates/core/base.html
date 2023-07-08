@@ -4,13 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/style.css' %}">
 	<link rel="icon" href="{% static 'core/images/flaticon.jpg' %}">
 	<link rel="stylesheet" href= "https://www.flaticon.com/free-icons/automatic">
 	<link rel="stylesheet" type="text/css" href="{% static 'core/css/styleham.css' %}">
 	<script src="https://kit.fontawesome.com/96816e3a2f.js" crossorigin="anonymous"></script>
 	<title>{% block title %}{% endblock  %} VanWil</title>
-	
+
 
 </head>
 <body class="is-preload">
@@ -40,14 +40,14 @@
 				<div class="logo">
 					<a title="Home" href="{% url 'home' %}"><img src="{% static 'core/images/LOGO.jpg' %}" alt="logo"></a>
 				</div>
-				<h1 class="title">Vanwil Automation 
+				<h1 class="title">Vanwil Automation
 					<em>Servicios de automatización, robótica y gestión de proyectos-</em></h1>
 			</div>
-			
+
 
 			{% block content %}{% endblock content %}
 
-		
+
 			<!--footer -->
 			<div id="footer">
 				<!-- Icons REDES SOCIALES -->

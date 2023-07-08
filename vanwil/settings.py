@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ub#yxi_zr_i6c8v$8jzv1l)2bm(^b*yyl%nz3z*_h$c3in2n1_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mpieszko.pythonanywhere.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -113,6 +113,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = "/home/mpieszko/vanwil/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -120,5 +121,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #media files
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = 'media/'
+#MEDIA_ROOT = "/home/mpieszko/vanwil/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'vanwil')
