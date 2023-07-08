@@ -1,0 +1,164 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Servicios{% endblock  %}
+{% block content %}
+			<h1 >Servicios</h1>
+			
+            <div class="video-responsive">
+               <iframe width="780" height="439" src="https://www.youtube.com/embed/-CESiuu7CYs" title="Robotic Case Erector and Case Packer | Universal Robots | Cobots | ONExia Inc." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  
+            </div>			
+			<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>QUE PODEMOS OFRECERLE?</h2>
+				</header>
+			</section>
+		
+			<!-- Posts PODEMOS OFRECERLES-->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://herosu.com.mx/wp-content/uploads/2019/07/KUKA-SIEMENS.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Robótica</h3>
+									<p>Somos una empresa dedicada a la robótica industrial. Somos prestadores de servicios profesionales de ingeniería, instalación, puesta en marcha y mantenimiento de robots industriales.</p>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://th.bing.com/th/id/OIP.26vZt9We3QxSrkFoo1_JsAHaEk?pid=ImgDet&rs=1" alt="" /></a>
+								<div class="inner">
+									<h3>Automatización</h3>
+									<p>Ingeniería, Programación y Soporte
+										Automatización y control de plantas industriales. Trabajamos con diversas marcas y tecnologías.
+										
+										Provisión de servicios en modalidad remota. Soluciones más económicas y adaptadas a la nueva realidad mundial.</p>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://automatizacionindustrial360.com/wp-content/uploads/2020/05/Principales-sistemas-de-automatizaci%C3%B3n-industrial.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Gestión de proyectos</h3>
+									<p>Ayudamos a que las instalaciones de nuestros clientes se traduzcan en equipos de alta eficiencia, sostenidos en el tiempo por mano de obra bien calificada, lo cual representa un mayor beneficio y rentabilidad de sus empresas.</p>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://4.bp.blogspot.com/-QfMoCf7keH0/WNvvzv1zqeI/AAAAAAAABBs/cTR8zD2fV-QZazP-Rw1bSTXBC2-X2NgZACLcB/s750/Automatizacion.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Capacitación</h3>
+									<p>Cursos de capacitación en PLC Omron, Interfaces Hombre-Máquina (HMI) Omron y Proface, Inverters, Sistemas de Inspección por Visión para nuestros clientes.</p>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			
+			<section id="cta" class="wrapper style3">
+			<div class="container">
+				<header class="major">                        
+					<h2>" Innovamos permanentemente. Investigamos y desarrollamos nuevos proyectos en el campo de la robótica"</h2>
+				</header>
+			</div>
+			</section>
+
+
+			<!-- CTA -->
+			
+			<section id="cta" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>ALGUNOS TRABAJOS REALIZADOS:</h2>
+					
+					</header>
+				</div>
+			</section>
+           
+			<!-- Posts PROYECTOS REALIZADOS-->
+			<section class="wrapper style1">
+				<div class="container">
+					{% for project in projects %}
+						<!-- Proyecto -->
+
+						<div class="post"> 
+							<div >
+								<h2 class="section-heading title"> {{project.title}}</h2> 
+								<img class="img-fluid" src="{{project.image.url}}" alt="">
+							</div>
+						  	<div >
+								  
+								<p>{{project.description}}</p>
+								{% if project.link %}
+									<p><a href=" {{project.link}}" target="_blank">Más información</a></p>
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+					
+					{% comment %} <div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://herosu.com.mx/wp-content/uploads/2019/07/KUKA-SIEMENS.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Instalación de procesos de pintura robotizados</h3>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLzGOPhxt9d5FwIzFXlqhh_W8oE8In9_mUPg&usqp=CAU" alt="" /></a>
+								<div class="inner">
+									<h3>Instalación de sistemas de soldadura por ultrasonido</h3>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdVtXIH5Y85_z0w9qyp79hPPe23vYfCgRdOMU3OROBI3Z0mN3pnTN2wt9U6ymF-PZZOSg&usqp=CAU" alt="" /></a>
+								<div class="inner">
+									<h3>Instalación de sistemas de visión para inspección de calidad Poka Yoku</h3>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://4.bp.blogspot.com/-QfMoCf7keH0/WNvvzv1zqeI/AAAAAAAABBs/cTR8zD2fV-QZazP-Rw1bSTXBC2-X2NgZACLcB/s750/Automatizacion.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Instalación de sistemas de paletizado y encajonado</h3>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="row">
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://automatizacionindustrial360.com/wp-content/uploads/2020/05/Principales-sistemas-de-automatizaci%C3%B3n-industrial.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Tableros de control industrial</h3>
+								</div>
+							</div>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<div class="box post">
+								<a href="#" class="image left"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLOXY4DybxDP5MCHjmInm-mibcCk-49VxYDA&usqp=CAU" alt="" /></a>
+								<div class="inner">
+									<h3>Instalación de línea de llenado y control de peso</h3>
+								</div>
+							</div>
+						</section>
+					</div> {% endcomment %}
+				</div>
+			</section>
+{% endblock content %}

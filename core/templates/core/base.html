@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+	<link rel="icon" href="{% static 'core/images/flaticon.jpg' %}">
+	<link rel="stylesheet" href= "https://www.flaticon.com/free-icons/automatic">
+	<link rel="stylesheet" type="text/css" href="{% static 'core/css/styleham.css' %}">
+	<script src="https://kit.fontawesome.com/96816e3a2f.js" crossorigin="anonymous"></script>
+	<title>{% block title %}{% endblock  %} VanWil</title>
+	
+
+</head>
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Nav-bar FIJA -->
+			<div class="fixed-top">
+				<nav >
+					<div class="menu-icon">
+					  <i class="fas fa-bars"></i>
+					</div>
+					<ul class="menu">
+						<li class="current"><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'about' %}">Quienes somos</a></li>
+						<li><a href="{% url 'portfolio' %}">Servicios</a></li>
+						<li><a href="{% url 'industria4' %}">Industria 4.0</a></li>
+						<li><a href="{% url 'contact' %}">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Logo Van-Wil y leyenda inferior -->
+			<div class="logo-title">
+				<div class="logo">
+					<a title="Home" href="{% url 'home' %}"><img src="{% static 'core/images/LOGO.jpg' %}" alt="logo"></a>
+				</div>
+				<h1 class="title">Vanwil Automation 
+					<em>Servicios de automatización, robótica y gestión de proyectos-</em></h1>
+			</div>
+			
+
+			{% block content %}{% endblock content %}
+
+		
+			<!--footer -->
+			<div id="footer">
+				<!-- Icons REDES SOCIALES -->
+				<section class="wrapper style2">
+				<div class="container">
+					<header class="major">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter">Twitter<span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f">facebook<span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-linkedin-in">LinkedIn<span class="label">LinkedIn</span></a></li>
+						</ul>
+					</header>
+				</div>
+				</section>
+
+				<!-- Copyright -->
+				<section>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; All rights reserved</li>
+					</ul>
+				</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'core/js/script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Industria 4.0{% endblock  %}
+{% block content %}			
+            <h1 class="margensuperior">INDUSTRIA 4.0</h1>
+            <H1>Soluciones tecnologicas de la industria 4.0 para fabricación inteligente </H1>
+                
+			<div class="image-container11">
+					<img class="imagen-prueba"
+					  src="https://www.sap.com/dam/application/imagelibrary/photos/272000/272221.jpg/_jcr_content/renditions/272221_photo_2048_0640.jpg.adapt.1599_522.false.false.false.false.jpg/1420672946332.jpg"
+					  srcset="https://www.sap.com/dam/application/imagelibrary/photos/272000/272221.jpg/_jcr_content/renditions/272221_photo_2048_0640.jpg.adapt.1599_522.false.false.false.false.jpg/1420672946332-400.jpg 400w,
+							  https://www.sap.com/dam/application/imagelibrary/photos/272000/272221.jpg/_jcr_content/renditions/272221_photo_2048_0640.jpg.adapt.1599_522.false.false.false.false.jpg/1420672946332-800.jpg 800w,
+							  https://www.sap.com/dam/application/imagelibrary/photos/272000/272221.jpg/_jcr_content/renditions/272221_photo_2048_0640.jpg.adapt.1599_522.false.false.false.false.jpg/1420672946332-1200.jpg 1200w"
+					  sizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw"
+					  alt="Descripción de la imagen">
+			</div>
+			
+			<!-- CTA -->
+			<section id="cta" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Que es la industria 4.0?</h2>
+						<a href="{% url 'contact' %}" class="button">¿Quieres saber más? contáctanos.</a>
+					</header>
+				</div>
+			</section>			
+		
+		
+			<div class="container">
+				<div class="row"><!--3columnas: conceptos ind4.0, 9 pilares y circulo-->
+			<section class="col-3 col-6-narrower col-12-mobilep">
+				<h3>Concepto de industria 4.0</h3>
+				<ul>
+					<li>Ahora estamos en la Cuarta Revolución Industrial, que lleva al futuro la automatización y la informatización. 
+					<li>Está potenciada por el Internet de las Cosas Industrial (IIoT) y los sistemas ciberfísicos –sistemas inteligentes y autónomos que utilizan algoritmos basados en computadoras para monitorear y controlar cosas físicas como maquinaria, robots y vehículos–. 
+											
+				</ul>
+			</section>
+			<section class="col-3 col-6-narrower col-12-mobilep">
+				<h3>9 Pilares de industria 4.0</h3>
+				<ul class="links">
+					<li><a href="#">1.Big Data y las analíticas IA</a></li>
+					<li><a href="#">2.Integración horizontal/vertical</a></li>
+					<li><a href="#">3.Computación en la nube</a></li>
+					<li><a href="#">4.Realidad aumentada</a></li>
+					<li><a href="#">5.Internet de las cosas industrial</a></li>
+					<li><a href="#">6.Simulación/gemelos digitales</a></li>
+					<li><a href="#">7.Fabricación aditiva/Impresión3D</a></li>
+					<li><a href="#">8.Simulación/gemelos digitales</a></li>
+					<li><a href="#">9.Ciberseguridad</a></li>
+				</ul>
+			</section>
+
+			<section class="col-3 col-6-narrower col-12-mobilep">
+					<div class="image-containe11r">
+					  <img class="imagen-prueba22" src="https://blog.wearedrew.co/hubfs/Industria-4-0.gif" alt="">
+					</div>
+			</section>
+				</div>
+			</div>
+			<!-- Highlights -->
+			<section class="wrapper style1"><!--CONOCE LOS BENEFICIOS DE SU IMPLEMENTACIÓN-->
+                <h2>CONOCE LOS BENEFICIOS DE SU IMPLEMENTACIÓN </h2>
+				<div class="container">
+					<div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-paper-plane"></i>
+									<h3>Incrementar la capacidad de adaptación a la demanda</h3>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-pencil-alt"></i>
+									<h3>Diseñar, producir y vender en menos tiempo, mejorando la experiencia de los usuarios</h3>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-wrench"></i>
+									<h3>Crear series de producción más cortas y flexibles</h3>
+								</div>
+							</section>
+					</div>
+                    <div class="row gtr-200">
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-paper-plane"></i>
+									<h3>Integrar grandes volúmenes de datos de diferentes sistemas para convertirlos en información estratégica para la gestión de excelencia, y poder planificar a mediano y largo plazo.</h3>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-pencil-alt"></i>
+									<h3>Integra de manera eficiente a todos los actores que intervienen en el proceso de fabricación</h3>
+								</div>
+							</section>
+							<section class="col-4 col-12-narrower">
+								<div class="box highlight">
+									<i class="icon solid major fa-wrench"></i>
+									<h3>Creación de empleo de calidad, permitiendo el desarrollo de carreras más productivas y mejor remuneradas.</h3>
+								</div>
+							</section>
+					</div>
+				</div>
+			</section>
+{% endblock content %}
