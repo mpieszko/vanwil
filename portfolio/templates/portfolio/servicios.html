@@ -85,7 +85,7 @@
 			</section>
 
 			<!-- Posts PROYECTOS REALIZADOS-->
-			<section class="wrapper style1">
+			<section>
 				<div class="container">
 					{% for project in projects %}
 						<!-- Proyecto -->
@@ -93,7 +93,9 @@
 						<div style="margin-bottom: 20px; border: 1px solid #1a0303">
 							<div >
 								<h2 class="section-heading title"> {{project.title}}</h2>
-								<img class="img-fluid" src="{{project.image.url}}" width="90%" height="90%" alt="">
+								<div class="imagen-prueba1">
+								    <img class="img-fluid" src="{{project.image.url}}" width="90%" height="90%" alt="">
+								</div>
 							</div>
 						  	<div >
 
